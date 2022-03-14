@@ -1,6 +1,5 @@
 package AppleAndOrange;
 
-import java.util.ArrayList;
 import java.util.List;
 
 public class Result {
@@ -18,13 +17,23 @@ public class Result {
 
     public static void countApplesAndOranges(int s, int t, int a, int b, List<Integer> apples, List<Integer> oranges) {
         // Write your code here
-        List<Integer> housePosition = new ArrayList<>();
 
-        for (int i = s; i <=t ; i++) {
-            housePosition.add(s);
+        int applesCount = 0;
+        for (int i = 0; i < apples.size(); i++) {
+            int applePos = a + apples.get(i);
+            if (applePos >= s && applePos <= t) {
+                applesCount++;
+            }
         }
-        System.out.println();
+        System.out.println(applesCount);
 
+        int orangesCount = 0;
+        for (int i = 0; i < oranges.size(); i++) {
+            int orangePos = b+oranges.get(i);
+            if (orangePos >= s && orangePos <= t) {
+                orangesCount++;
+            }
+        }
+        System.out.println(orangesCount);
     }
-
 }
