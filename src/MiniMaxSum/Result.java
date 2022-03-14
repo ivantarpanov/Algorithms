@@ -1,7 +1,5 @@
 package MiniMaxSum;
 
-import java.util.Arrays;
-import java.util.Collection;
 import java.util.Collections;
 import java.util.List;
 
@@ -24,5 +22,4 @@ public class Result {
         }
         System.out.println(minSum+" " +maxSum);
     }
-
 }
