@@ -8,6 +8,7 @@ import java.util.stream.Stream;
 
 import static java.util.stream.Collectors.toList;
 
+//Link to the description ===>https://www.hackerrank.com/challenges/apple-and-orange/problem?isFullScreen=true
 public class Main {
     public static void main(String[] args) throws IOException {
         BufferedReader bufferedReader = new BufferedReader(new InputStreamReader(System.in));
